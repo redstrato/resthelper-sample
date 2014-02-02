@@ -10,6 +10,7 @@
 		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
 	<context:property-placeholder location="classpath:*.properties" />
+	<context:component-scan base-package="io.resthelpersample" />
 
 	<mvc:annotation-driven  conversion-service="conversionService">
 		<mvc:message-converters>
@@ -28,7 +29,6 @@
 		class="org.springframework.context.support.ConversionServiceFactoryBean"></bean>
 
 	<!-- for resthelper -->
-	<context:property-placeholder location="classpath:*.properties" />
 	<context:component-scan base-package="io.resthelper" />
 	<!-- for some reasons, use configuration xml for RestHelperService -->
 	<bean id="restHelperService" class="io.resthelper.RestHelperService" />

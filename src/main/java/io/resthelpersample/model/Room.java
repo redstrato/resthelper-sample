@@ -22,6 +22,9 @@ public class Room {
 	private int number;
 	private boolean reserved;
 	
+	public Room() {
+	}
+	
 	/**
 	 * @param number
 	 */
