@@ -31,5 +31,5 @@
 	<!-- for resthelper -->
 	<context:component-scan base-package="io.resthelper" />
 	<!-- for some reasons, use configuration xml for RestHelperService -->
-	<bean id="restHelperService" class="io.resthelper.RestHelperService" />
+	<!-- <bean id="restHelperService" class="io.resthelper.RestHelperService" /> -->
 </beans>
